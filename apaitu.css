@@ -1,0 +1,72 @@
+.img-thumbnail {
+  border-radius: 100%;
+}
+
+.custom-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-screen {
+  height: 100hv;
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-white;
+}
+
+.p-4:hover > p {
+  opacity: 1;
+}
+
+@keyframes typing-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+.animate-click {
+  display: inline-block;
+}
+.animate-click.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes slide-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-Rotate {
+  animation: Rotate 10s infinite;
+}
+
+#myElement {
+  width: 100px;
+  height: 100px;
+  //background-color: red;
+  position: relative;
+  top: 0;
+  transition: top 10s ease-in-out;
